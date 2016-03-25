@@ -1,0 +1,178 @@
+$base-color: #333;
+
+/* Media queries */
+@mixin respond-to($val, $query) {
+  
+  @media ($val: $query) {
+    @content
+  }
+  
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $base-color;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+p, li, a, figcaption, form {
+  font-size: 1.6rem;
+}
+
+
+nav {
+  position: fixed;
+  top: auto;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: .6;
+  text-align: right;
+  background-color: black;
+  
+  @include respond-to(max-width, 1224px) {
+    bottom: auto;
+    top: 0;
+    text-align: left;
+  }
+  
+  li {
+    display: inline;
+  }
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: $base-color;
+}
+
+.auto-height {
+  width: 100%; 
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-color: white;
+  min-height: 800px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid $base-color;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid $base-color;
+  
+  img {
+    max-width: 50%;
+  }
+  
+  p {
+    max-width: 80%;
+  }
+  
+  .skillsList {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+}
+
+.portfolioSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid $base-color;
+  
+  figure {
+    max-width: 80%;
+    border: 1px solid $base-color;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $base-color;
+   }
+  
+  figcaption {
+    text-align: center;
+  }
+  
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 5px solid $base-color;
+  
+  .contactlinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+  
+}
+
+
+
+form {
+  margin-top: 5%;
+  background-color: grey;
+  min-width: 30%; 
+  
+  * {
+    display: block;
+  }
+  
+}
+
+
+footer {
+  margin: 0;
+  padding: 10px;
+  min-height: 200px;
+  text-align: center;
+}
