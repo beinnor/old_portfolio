@@ -2,11 +2,11 @@ $base-color: #333;
 
 /* Media queries */
 @mixin respond-to($val, $query) {
-  
+
   @media ($val: $query) {
     @content
   }
-  
+
 }
 
 * {
@@ -47,23 +47,34 @@ p, li, a, figcaption, form {
 
 nav {
   position: fixed;
-  top: auto;
   width: 100%;
   left: 0;
-  bottom: 0;
   opacity: .6;
-  text-align: right;
-  background-color: black;
-  
+  background-color: #000;
+  bottom: auto;
+  top: 0;
+  text-align: left;
+
+
   @include respond-to(max-width, 1224px) {
-    bottom: auto;
-    top: 0;
-    text-align: left;
+    top: auto;
+    bottom: 0;
+    text-align: right;
   }
-  
+
   li {
     display: inline;
   }
+
+  li:hover {
+    background-color: #333;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
 }
 
 
@@ -74,7 +85,7 @@ main {
 }
 
 .auto-height {
-  width: 100%; 
+  width: 100%;
   margin-top: 0px;
   margin-bottom: 5px;
   background-color: white;
@@ -82,6 +93,12 @@ main {
 }
 
 .landing {
+
+  background: url(../images/background.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,25 +112,26 @@ main {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid $base-color;
-  
+
   img {
-    max-width: 50%;
+    max-width: 20%;
+    border: 1px solid #000;
   }
-  
+
   p {
     max-width: 80%;
   }
-  
+
   .skillsList {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
   }
-  
+
   li {
     list-style: none;
   }
-  
+
 }
 
 .portfolioSmall {
@@ -122,22 +140,22 @@ main {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid $base-color;
-  
+
   figure {
     max-width: 80%;
     border: 1px solid $base-color;
   }
-  
+
   img {
     width: 100%;
     height: auto;
     border-bottom: 1px solid $base-color;
    }
-  
+
   figcaption {
     text-align: center;
   }
-  
+
 }
 
 .contact {
@@ -145,7 +163,7 @@ main {
   flex-direction: column;
   align-items: center;
   border-bottom: 5px solid $base-color;
-  
+
   .contactlinks {
     display: flex;
     flex-flow: row wrap;
@@ -153,7 +171,7 @@ main {
     align-items: center;
     width: 60%;
   }
-  
+
 }
 
 
@@ -161,16 +179,21 @@ main {
 form {
   margin-top: 5%;
   background-color: grey;
-  min-width: 30%; 
-  
+  min-width: 30%;
+
   * {
     display: block;
   }
-  
+
 }
 
 
 footer {
+  background: url(../images/background.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
   padding: 10px;
   min-height: 200px;

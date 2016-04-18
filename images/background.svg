@@ -16,7 +16,7 @@
    id="svg4190"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="background.svg">
   <defs
      id="defs4192">
     <inkscape:path-effect
@@ -38,6 +38,94 @@
        effect="spiro"
        id="path-effect4742"
        is_visible="true" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Fades hue progressively to white"
+       inkscape:menu="Color"
+       inkscape:label="Hue to White"
+       id="filter4245">
+      <feColorMatrix
+         values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="r"
+         in="SourceGraphic"
+         id="feColorMatrix4247" />
+      <feColorMatrix
+         values="0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="g"
+         in="SourceGraphic"
+         id="feColorMatrix4249" />
+      <feColorMatrix
+         values="0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="b"
+         in="SourceGraphic"
+         id="feColorMatrix4251" />
+      <feBlend
+         result="minrg"
+         in="r"
+         mode="darken"
+         in2="g"
+         id="feBlend4253" />
+      <feBlend
+         result="p"
+         in="minrg"
+         mode="darken"
+         in2="b"
+         id="feBlend4255" />
+      <feBlend
+         result="maxrg"
+         in="r"
+         mode="lighten"
+         in2="g"
+         id="feBlend4257" />
+      <feBlend
+         result="q"
+         in="maxrg"
+         mode="lighten"
+         in2="b"
+         id="feBlend4259" />
+      <feComponentTransfer
+         result="q2"
+         in="q"
+         id="feComponentTransfer4261">
+        <feFuncR
+           slope="0"
+           type="linear"
+           id="feFuncR4263" />
+      </feComponentTransfer>
+      <feBlend
+         result="pq"
+         in="p"
+         mode="lighten"
+         in2="q2"
+         id="feBlend4265" />
+      <feColorMatrix
+         values="-1 1 0 0 0 -1 1 0 0 0 -1 1 0 0 0 0 0 0 0 1 "
+         type="matrix"
+         result="qminp"
+         in="pq"
+         id="feColorMatrix4267" />
+      <feComposite
+         k3="1"
+         operator="arithmetic"
+         result="qminpc"
+         in="qminp"
+         in2="qminp"
+         id="feComposite4269" />
+      <feBlend
+         result="result2"
+         in2="SourceGraphic"
+         mode="screen"
+         id="feBlend4271" />
+      <feComposite
+         operator="in"
+         in="result2"
+         in2="SourceGraphic"
+         result="result1"
+         id="feComposite4273" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -47,8 +135,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.0875"
-     inkscape:cx="3637.577"
-     inkscape:cy="-552.36039"
+     inkscape:cx="289.00559"
+     inkscape:cy="-140.93182"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,7 +145,8 @@
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     units="px" />
+     units="px"
+     borderlayer="true" />
   <metadata
      id="metadata4195">
     <rdf:RDF>
@@ -66,7 +155,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -85,12 +174,15 @@
        sodipodi:nodetypes="csscsc" />
     <g
        id="g5124"
-       transform="matrix(2.0619412,0,0,1.8129238,-249.77607,-661.45729)">
+       transform="matrix(2.0619412,0,0,1.8129238,-249.77607,-661.45729)"
+       style="opacity:0.857;filter:url(#filter4245)">
       <g
          transform="translate(-531.42857,-748.57143)"
-         id="g5045">
+         id="g5045"
+         style="">
         <g
-           id="g5005">
+           id="g5005"
+           style="">
           <use
              style="opacity:0.23000004;fill:#4141be"
              height="100%"
@@ -101,7 +193,8 @@
              y="0"
              x="0" />
           <g
-             id="g4940">
+             id="g4940"
+             style="">
             <use
                style="opacity:0.23000004;fill:#2e2ecb"
                height="100%"
@@ -141,7 +234,8 @@
              x="0" />
           <g
              transform="matrix(0.99987824,0.01560457,-0.01560457,0.99987824,21.536529,-14.763956)"
-             id="g4852">
+             id="g4852"
+             style="">
             <use
                style="opacity:0.23000004;fill:#3737c2"
                height="100%"
@@ -505,7 +599,8 @@
            height="100%"
            style="opacity:0.23000004;fill:#3535b4" />
         <g
-           id="g4975">
+           id="g4975"
+           style="">
           <use
              style="opacity:0.23000004;fill:#3535a7"
              height="100%"
