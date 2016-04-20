@@ -15,5 +15,5 @@
 
 
 ### Sass ###
-.sass-cache/
+scss/.sass-cache/
 *.css.map
