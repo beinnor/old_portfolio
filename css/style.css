@@ -52,15 +52,7 @@ nav {
 
 main {
   display: flex;
-  flex-direction: column;
-  background-color: #333; }
-
-.auto-height {
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  background-color: white;
-  min-height: 800px; }
+  flex-direction: column; }
 
 .landing {
   background: url(../images/background.svg) no-repeat center center fixed;
@@ -96,21 +88,29 @@ main {
   .about li {
     list-style: none; }
 
-.portfolioSmall {
+#portfolio {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-bottom: 5px solid #333; }
-  .portfolioSmall figure {
-    max-width: 80%;
-    border: 1px solid #333; }
-  .portfolioSmall img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #333; }
-  .portfolioSmall figcaption {
-    text-align: center; }
+
+.portfolio_projects {
+  display: flex;
+  flex-flow: row wrap; }
+  .portfolio_projects .project {
+    display: flex; }
+    .portfolio_projects .project figure {
+      max-width: 80%;
+      border: 1px solid #333; }
+    .portfolio_projects .project img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #333; }
+    .portfolio_projects .project figcaption {
+      text-align: center; }
 
 .contact {
   display: flex;

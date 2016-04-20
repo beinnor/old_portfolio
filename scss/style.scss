@@ -81,16 +81,9 @@ nav {
 main {
   display: flex;
   flex-direction: column;
-  background-color: $base-color;
+
 }
 
-.auto-height {
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  background-color: white;
-  min-height: 800px;
-}
 
 .landing {
 
@@ -144,27 +137,41 @@ main {
 
 }
 
-.portfolioSmall {
+#portfolio {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-bottom: 5px solid $base-color;
+}
 
-  figure {
-    max-width: 80%;
-    border: 1px solid $base-color;
+.portfolio_projects {
+  display: flex;
+  flex-flow: row wrap;
+
+  .project {
+
+      display: flex;
+
+    figure {
+      max-width: 80%;
+      border: 1px solid $base-color;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid $base-color;
+     }
+
+    figcaption {
+      text-align: center;
+    }
   }
 
-  img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid $base-color;
-   }
 
-  figcaption {
-    text-align: center;
-  }
 
 }
 
