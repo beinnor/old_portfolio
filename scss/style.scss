@@ -104,6 +104,16 @@ main {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid $base-color;
+
+  h1 {
+    color: #aaa;
+  }
+
+  h2 {
+    color: #aaa;
+  }
+
+
 }
 
 .about {
@@ -198,4 +208,42 @@ footer {
   padding: 10px;
   min-height: 200px;
   text-align: center;
+}
+
+.scrollArrowDown {
+	width: 60px;
+	height: 75px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 50px;
+}
+
+.scrollArrowDown path {
+	stroke: $base-color;
+	fill: transparent;
+	stroke-width: 5px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+
+.scrollArrowDown path.arrow1 {
+	animation-delay:-1s;
+}
+
+.scrollArrowDown path.arrow2 {
+	animation-delay:-0.5s;
+}
+
+.scrollArrowDown path.arrow3 {
+	animation-delay:0s;
 }
