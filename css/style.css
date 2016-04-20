@@ -50,10 +50,6 @@ nav {
     color: #fff;
     text-decoration: none; }
 
-main {
-  display: flex;
-  flex-direction: column; }
-
 .landing {
   background: url(../images/background.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -63,8 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-bottom: 5px solid #333; }
+  align-items: center; }
   .landing h1 {
     color: #aaa; }
   .landing h2 {
@@ -75,7 +70,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid #333; }
+  border-bottom: 1px solid #333;
+  padding: 5% 5%; }
   .about img {
     max-width: 20%;
     border: 1px solid #000; }
@@ -85,23 +81,26 @@ main {
     display: flex;
     flex-flow: row wrap;
     align-items: center; }
-  .about li {
-    list-style: none; }
 
-#portfolio {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 5px solid #333; }
+  border-bottom: 1px solid #333;
+  padding: 5% 5%; }
 
 .portfolio_projects {
   display: flex;
-  flex-flow: row wrap; }
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center; }
   .portfolio_projects .project {
-    display: flex; }
+    display: flex;
+    width: 400px; }
     .portfolio_projects .project figure {
       max-width: 80%;
       border: 1px solid #333; }
@@ -116,7 +115,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 5px solid #333; }
+  border-bottom: 1px solid #333;
+  padding: 5% 5%; }
   .contact .contactlinks {
     display: flex;
     flex-flow: row wrap;

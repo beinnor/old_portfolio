@@ -79,8 +79,7 @@ nav {
 
 
 main {
-  display: flex;
-  flex-direction: column;
+
 
 }
 
@@ -96,7 +95,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid $base-color;
+
 
   h1 {
     color: #aaa;
@@ -114,7 +113,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid $base-color;
+  border-bottom: 1px solid $base-color;
+  padding: 5% 5%;
 
   img {
     max-width: 20%;
@@ -132,28 +132,33 @@ main {
   }
 
   li {
-    list-style: none;
+    //list-style: circle;
   }
 
 }
 
-#portfolio {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 5px solid $base-color;
+  border-bottom: 1px solid $base-color;
+  padding: 5% 5%;
 }
 
 .portfolio_projects {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
 
   .project {
 
       display: flex;
+      width: 400px;
 
     figure {
       max-width: 80%;
@@ -179,7 +184,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 5px solid $base-color;
+  border-bottom: 1px solid $base-color;
+  padding: 5% 5%;
 
   .contactlinks {
     display: flex;
