@@ -38,7 +38,19 @@
   border-top: 1px solid #333; }
 
 .aboutimg {
-  width: 30%; }
+  width: 300px;
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */ }
+  @media (min-width: 768px) {
+    .aboutimg {
+      width: 500px; } }
+  @media (min-width: 992px) {
+    .aboutimg {
+      width: 30%; } }
+  @media (min-width: 1200px) {
+    .aboutimg {
+      width: 30%; } }
 
 .footer {
   height: 100px;

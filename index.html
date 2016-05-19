@@ -53,7 +53,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Top <span class="sr-only">(current)</span></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#"><del>Blog</del></a></li>
+          <li class="hidden"><a href="#"><del>Blog</del></a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -74,9 +74,9 @@
 
   <section id="about" class="container">
 
-    <h2>This is me</h2>
+    <h2 class="text-center">This is me</h2>
 
-    <img src="img/profile_img.svg" class="aboutimg img-responsive center-block" alt="Drawing of me">
+    <img src="img/profile_img.svg" class="aboutimg img-responsive img-thumbnail center-block" alt="Drawing of me">
 
 
     <div class="row">
@@ -123,10 +123,10 @@
 
   <section id="portfolio" class="container">
 
-
+<div class="text-center">
     <h2>This is the stuff I make</h2>
     <p>Here are some of the projects I've done. More will come.</p>
-
+</div>
     <div class="row">
 
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -194,19 +194,21 @@
 
   <section id="contact" class="container">
 
-    <h2>On social media:</h2>
+    <h2 class="text-center">On social media:</h2>
     <div class="row text-center">
-      <div class="col-sm-3">
+<!--
+      <div class="col-sm-3 hidden">
         <a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i><del>Facebook</del></a>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 hidden">
         <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i><del>LinkedIn</del></a>
       </div>
-      <div class="col-sm-3">
-        <a href="https://www.freecodecamp.com/beinnor"><i class="fa fa-fire fa-2x" aria-hidden="true"></i>Freecodecamp</a>
+    -->
+      <div class="col-xs-6">
+        <a href="https://www.freecodecamp.com/beinnor"><i class="fa fa-fire fa-4x" aria-hidden="true"></i>Freecodecamp</a>
       </div>
-      <div class="col-sm-3">
-        <a href="https://github.com/beinnor"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i>GitHub</a>
+      <div class="col-xs-6">
+        <a href="https://github.com/beinnor"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i>GitHub</a>
       </div>
     </div>
 
