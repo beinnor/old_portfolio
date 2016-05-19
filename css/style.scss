@@ -1,0 +1,67 @@
+// TODO: Clean up this code ¯\_(ツ)_/¯
+$accent-color: #333;
+$background-color: #7f7f7f;
+$call-to-action-color: white;
+
+
+
+
+
+/*    END NAV SECTION    */
+
+/* Parallax */
+.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+.parallax-1 {
+  margin-top: 5rem;
+  height: 100vh;
+  background-image: url("../img/desk-top.png");
+  border-bottom: 1px solid $accent-color;
+  text-align: center;
+
+}
+.parallax-2 {
+  background-image: url("../img/desk-middle.png");
+  border-bottom: 1px solid $accent-color;
+  border-top: 1px solid $accent-color;
+}
+.parallax-3 {
+  background-image: url("../img/desk-bottom.png");
+  border-bottom: 1px solid $accent-color;
+  border-top: 1px solid $accent-color;
+}
+
+.aboutimg {
+
+  width: 30%;
+
+
+
+}
+
+.footer {
+  height: 100px;
+  background-color: $background-color;
+  opacity: 0.8;
+}
