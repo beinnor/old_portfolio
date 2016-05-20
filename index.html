@@ -31,14 +31,15 @@
 </head>
 
 <body>
+  <main role="main">
 
   <header class="hide">
-    <h1>Welcome to my website</h1>
+    <h1>Welcome to Beinnor’s website</h1>
   </header>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
     <h1 class="hide">Navigation bar</h1>
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,17 +69,19 @@
   </nav>
 
 
-  <section class="parallax parallax-1">
+  <section>
+  <div class="parallax parallax-1">
+    <header>
     <h1>Beinnor</h1>
     <h2>Front-end Web Developer</h2>
+    </header>
 
 
+  </div>
 
-  </section>
 
-  <section id="about" class="container">
-
-    <h1 class="text-center">This is me</h1>
+    <div  id="about" class="container">
+    <h2 class="text-center">This is me</h2>
 
     <img src="img/profile_img.svg" class="aboutimg img-responsive img-thumbnail center-block" alt="Drawing of me">
 
@@ -128,16 +131,20 @@
         </p>
       </div>
     </div>
+  </div>
   </section>
 
-  <section class="parallax parallax-2">
-    <h1>Portfolio</h1>
-  </section>
+<section id="portfolio">
+  <div class="parallax parallax-2">
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+  </div>
 
-  <section id="portfolio" class="container">
 
+    <div class="container">
     <div class="text-center">
-      <h1>This is the stuff I make</h1>
+      <h2>This is the stuff I make</h2>
       <p>Here are some of the projects I've done. More will come.</p>
     </div>
     <div class="row">
@@ -146,7 +153,7 @@
 
         <figure class="thumbnail text-center">
           <a href="http://beinnor.github.io/tibetan-spaniel/">
-            <img src="img/tibetan.png" class="img-responsive" alt="Placeholder">
+            <img src="img/tibetan.png" class="img-responsive" alt="Thumbnail image of tibetan spaniel website">
           </a>
           <figcaption><strong>Tibetan Spaniel tribute page</strong>
             <p>
@@ -160,7 +167,7 @@
 
         <figure class="thumbnail text-center">
           <a href="">
-            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder"></a>
+            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder image, question mark"></a>
           <figcaption><strong>Project #2</strong>
             <p>Coming soon...</p>
           </figcaption>
@@ -173,7 +180,7 @@
 
         <figure class="thumbnail text-center">
           <a href="">
-            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder"></a>
+            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder image, question mark"></a>
           <figcaption><strong>Project #3</strong>
             <p>Coming soon...</p>
           </figcaption>
@@ -187,7 +194,7 @@
 
         <figure class="thumbnail text-center">
           <a href="">
-            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder"></a>
+            <img src="img/A_blank_flag.png" class="img-responsive" alt="Placeholder image, question mark"></a>
           <figcaption><strong>Project #4</strong>
             <p>Coming soon...</p>
           </figcaption>
@@ -198,16 +205,18 @@
 
     </div>
 
-
+</div>
   </section>
-
-  <section class="parallax parallax-3">
+<section id="contact">
+  <div class="parallax parallax-3">
+    <header>
     <h1>Contact</h1>
-  </section>
+  </header>
+  </div>
 
-  <section id="contact" class="container">
 
-    <h1 class="text-center">On social media</h1>
+    <div class="container">
+    <h2 class="text-center">On social media</h2>
     <div class="row text-center">
       <!--
       <div class="col-sm-3 hidden">
@@ -229,10 +238,10 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="panel-title">Contact form</h2>
-        <u>not working yet</u>
+        <em>not working yet</em>
       </div>
       <div class="panel-body">
-        <form>
+        <form role="form">
 
           <div class="form-group">
             <label for="nameInput">Your name</label>
@@ -260,10 +269,12 @@
       </div>
     </div>
 
-
+  </div>
   </section>
 
-  <footer class="footer">
+</main>
+
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <p class="text-center">
         &copy; Copyright 2016, Beinnor
